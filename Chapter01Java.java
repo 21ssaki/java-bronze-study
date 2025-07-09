@@ -2,7 +2,7 @@
 // 学習目標: Javaプログラムの基本構造を理解する
 
 // クラスの定義（ファイル名と同じ名前にする）
-public class Chapter01.Java {
+public class Chapter01Java {
 
 // mainメソッド - プログラムの開始点
 public static void main(String[] args) {
