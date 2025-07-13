@@ -1,6 +1,15 @@
 // Java Bronze 対策 - Chapter1: Javaの基礎の基礎
 // 学習目標: Javaプログラムの基本構造を理解する
 
+// これは1行コメントです
+
+/*
+これは
+複数行にまたがる
+コメントです
+*/
+
+
 // クラスの定義（ファイル名と同じ名前にする）
 public class Chapter01Java {
 
@@ -25,6 +34,11 @@ public static void main(String[] args) {
     System.out.println("年齢: " + age);
     
     System.out.println(); // 空行
+
+    // 定数
+    final double PI = 3.14;
+    // PI = 3.1415;は変更不可なためエラーになる
+
     
     // 3. 基本的なデータ型
     int number = 100;           // 整数
@@ -66,6 +80,21 @@ public static void main(String[] args) {
     }
     
     System.out.println(); // 空行
+
+    // switch文(ifと並ぶ基本構文)
+    int day = 2;
+    switch (day) {
+        case 1:
+            System.out.println("月曜日");
+            break;
+        case 2:
+            System.out.println("火曜日");
+            break;
+        default:
+            System.out.println("その他の曜日");
+            break;
+    }
+
     
     // 6. for文 - 繰り返し処理
     System.out.println("1から5まで数える:");
@@ -114,6 +143,9 @@ public static void main(String[] args) {
 # Chapter1 学習ポイント
 
 1. Javaプログラムの基本構造
+- コメントの書き方(プログラムの説明)
+- // 1行コメント
+- /* 複数行コメント */
 - public class クラス名
 - public static void main(String[] args)
 - System.out.println() で出力
@@ -123,6 +155,7 @@ public static void main(String[] args) {
 - char: 1文字を入れる箱
 - boolean: true/falseを入れる箱
 - String: 文字列を入れる箱
+- 定数:一度値を入れたら変更できない箱(税率・定員・企業名など固定値で使う)
 1. 基本的な演算
 - - (足し算)
 - - (引き算)
@@ -131,6 +164,18 @@ public static void main(String[] args) {
 1. if文
 - 条件によって処理を分ける
 - if (条件) { 処理 } else { 処理 }
+- switch文は複数選択肢(複数分岐)がある場合に便利
+- switch(値){
+    case 値1:
+         処理1;
+         break;
+    case 値2:
+         処理2;
+         break;
+    default:
+         それ以外の処理;
+         break;
+}
 1. for文
 - 繰り返し処理
 - for (初期値; 条件; 増減) { 処理 }
@@ -148,5 +193,5 @@ public static void main(String[] args) {
 
 - このコードを実行して動作を確認
 - 値を変更して実験
-- Chapter2でメソッドとクラスを学習
+- Chapter2でマルチスレッドとデータ型を学習
   */
