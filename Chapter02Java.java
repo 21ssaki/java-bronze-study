@@ -99,10 +99,15 @@ public class Chapter02Java{
 - thread.start()でスレッドを動かし始める
 - メインスレッドと別々に処理が進むので同時に動くように見える(＝マルチスレッド)  
 1.データ型
-- 整数型: int, long
-- 小数型: float, double
-- 文字型: char
-- 真偽値型: boolean
-- 文字列(参照型): String
 
+├─ プリミティブ型
+│   ├─ 整数型: byte, short, int, long
+│   ├─ 小数型: float, double
+│   ├─ 文字型: char
+│   └─ 真偽値型: boolean
+└─ 参照型
+    ├─ 文字列型: String
+    └─ 配列型: int[], String[]
+
+    
 # =======================
