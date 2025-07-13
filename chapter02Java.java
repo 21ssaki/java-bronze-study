@@ -1,5 +1,5 @@
-// Java Bronze 対策 - Chapter2: データ型と演算子
-// 学習目標: Javaのデータ型とマルチスレッドの基本・動かし方を理解する
+// Java Bronze 対策 - Chapter2: データ型とマルチスレッド
+// 学習目標: Javaのデータ型とマルチスレッドの基本・動かし方を理解する 
 
 // スレッド用のクラス（Threadを継承）
 class MyThread extends Thread {
@@ -16,9 +16,55 @@ class MyThread extends Thread {
         System.out.println("スレッド終了！");
     }
 }
+public class Chapter02Java{
+    public static void main(String[] args){
+        // データ型の説明とサンプル処理
+        runDateTypesDemo(); // 先にデータ型を学習
 
+        System.out.println();
 
-        // 1. マルチスレッドの実行例
+        // マルチスレッドの実行
+        runMultithreadDemo(); // マルチスレッドを動かす
+
+        System.out.println(); 
+        System.out.println("Chapter2完了");
+    }
+
+    // データ型の説明と動作例
+    static void runDateTypesDemo() {
+        System.out.println("===データ型の例 ===");
+
+        // 整数型
+        int i = 10;
+        long l = 10000000000L;
+
+        // 浮動小数点型
+        float f = 3.14f;
+        double d = 3.1415926535;
+
+        // 文字型
+        char c = 'A';
+
+        // 真偽値型
+        boolean boolTrue = true;
+        boolean boolFalse = false;
+
+        // 文字列（参照型）
+        String s = "Java";
+
+        System.out.println("int: " + i);
+        System.out.println("long: " + l);
+        System.out.println("float: " + f);
+        System.out.println("double: " + d);
+        System.out.println("char: " + c);
+        System.out.println("boolean true: " + boolTrue);
+        System.out.println("boolean false: " + boolFalse);
+        System.out.println("String: " + s);
+    }
+
+    // マルチスレッドの実行例
+    static void runMultithreadDemo() {
+        System.out.println("=== マルチスレッドの例 ===");
         System.out.println("メインスレッド開始");
 
         MyThread thread = new MyThread(); // 新しいスレッドを作る
@@ -35,9 +81,9 @@ class MyThread extends Thread {
         }
 
         System.out.println("メインスレッド終了");
-        System.out.println("Chapter1 完了！");
     }
 }
+
 
 
 
@@ -52,7 +98,11 @@ class MyThread extends Thread {
   // ()の中の処理がスレッドの仕事になる(スレッドがやることを書く)
 - thread.start()でスレッドを動かし始める
 - メインスレッドと別々に処理が進むので同時に動くように見える(＝マルチスレッド)  
+1.データ型
+- 整数型: int, long
+- 小数型: float, double
+- 文字型: char
+- 真偽値型: boolean
+- 文字列(参照型): String
 
 # =======================
-
-  データ型については後日学習予定
