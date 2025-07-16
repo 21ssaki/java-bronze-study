@@ -42,6 +42,14 @@ public class Chapter02Java{
         float f = 3.14f;
         double d = 3.1415926535;
 
+        // 暗黙の型変換
+        int a = 50;
+        double b = a;
+
+        // 明示的な型変換
+        double x = 5.9;
+        int y =(int) x;
+
         // 文字型
         char c = 'A';
 
@@ -56,6 +64,13 @@ public class Chapter02Java{
         System.out.println("long: " + l);
         System.out.println("float: " + f);
         System.out.println("double: " + d);
+        
+        System.out.println("暗黙の型変換 int a → double b: " + b); //int=50
+        
+        System.out.println("明示的な型変換 double x → int y: ");
+        System.out.println(" double x: " + x ); 
+        System.out.println(" int y: "+ y);
+        
         System.out.println("char: " + c);
         System.out.println("boolean true: " + boolTrue);
         System.out.println("boolean false: " + boolFalse);
@@ -109,5 +124,9 @@ public class Chapter02Java{
     ├─ 文字列型: String
     └─ 配列型: int[], String[]
 
+暗黙の型変換、明示的な型変換
+・""で囲まれた部分は文字列として扱われる。    
+・double型はintよりも表現できる範囲が広いため、intからdoubleへの変換は自動で行われる(暗黙)
+・doubleからintに変更する場合は大きな型から小さな型への変換となるため明示的に指定する必要があり、小数点以下が強制的に切り捨てられる可能性がある(明示的)
     
 # =======================
