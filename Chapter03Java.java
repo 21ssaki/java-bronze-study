@@ -18,6 +18,36 @@ public class Chapter03Java {
 
         System.out.println(); // 空行
 
+         // 1.5 インクリメント・デクリメントの例
+        System.out.println("=== インクリメント・デクリメントの例 ===");
+        int num = 5;
+        System.out.println("元の num: " + num);
+
+        num++;
+        System.out.println("num++ 実行後: " + num);
+
+        num--;
+        System.out.println("num-- 実行後: " + num);
+
+        System.out.println("前置インクリメント (++num): " + (++num)); // 先に+1してから表示
+        System.out.println("後置インクリメント (num++): " + (num++)); // 表示後に+1される
+        System.out.println("現在の num: " + num);
+
+        System.out.println(); // 空行
+
+                // 1.6 デクリメントの例
+        System.out.println("=== デクリメントの例 ===");
+        int count = 5;
+        System.out.println("元の count: " + count);
+        count--;
+        System.out.println("count-- 実行後: " + count);
+        System.out.println("前置デクリメント (--count): " + (--count));
+        System.out.println("後置デクリメント (count--): " + (count--));
+        System.out.println("現在の count: " + count);
+
+        System.out.println(); // 空行
+
+
         // 2. 比較演算子の例
         System.out.println("=== 比較演算子の例 ===");
         System.out.println("a == b: " + (a == b));
